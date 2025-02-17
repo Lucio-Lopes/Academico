@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<title>Disciplinas</title>
+	</head>
+	<body>
+		<div class="edit">
+			<h1>Criar disciplina</h1>
+			<form name="formDisc"action="insertDisc">
+				<div>
+				
+					<label for="">Nome:</label>
+					<input type="text" name="nome">
+				
+				</div>
+				<div>
+				
+					<label for="">Semestre:</label>
+					<input type="text" name="semestre" maxlength="1" class="semestre phone_with_ddd">
+					
+				</div>
+				<div>
+				
+					<label for="">Carga horaria:</label>
+					<input type="text" name="hora" maxlength="2" class="phone">
+					
+				</div>
+				
+				<input type="button" value="Criar" class="enviar" onclick="validarDisc()">
+			</form>
+			<script src="validador.js"></script>
+			<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+			<script>
+			
+			$('.phone_with_ddd').mask('0');
+			$('.phone').mask('00');
+			</script>
+		</div>
+	</body>
+</html>

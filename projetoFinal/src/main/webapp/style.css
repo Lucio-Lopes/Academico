@@ -1,0 +1,181 @@
+*{
+
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body{
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    background-color:#F5F5F5;
+    
+    font-family:Helvetica, sans-serif;
+    margin-top:4rem;
+}
+
+.centro{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.centro a{
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    height: 4rem;
+    border-radius: 0.3rem;
+    border: 1px solid #babac7;
+    background-color: #E6E6FA;
+    color: black;
+    font-size: 14pt;
+    box-shadow: 1px 1px 1px gray;
+    font-weight: bold;
+}
+.tabelas{
+	
+	background-color:white;
+	width:60%;
+	height:80%;
+	border-radius:0.5rem;
+	padding:1rem;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	display:flex;
+	flex-direction:column;
+	gap:1rem;
+}
+#tabela{
+	
+	margin-top:2rem;
+	border-collapse:collapse;
+	width:100%;
+	
+}
+
+#tabela th{
+	
+	border:1px solid black;
+	padding:1rem;
+	text-align:left;
+	background-color:#00BFFF;
+	color:white;
+}
+
+#tabela td{
+	
+	border:1px solid black;
+	padding:0.7rem;
+	
+}
+#tabela td a {
+	
+	color:blue;
+	
+}
+.cabecalho{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    gap:2em;
+}
+
+.nova{
+
+	padding:0.5rem;
+	background-color: 	#00BFFF;
+	color:white;
+	border-radius:3px;
+	font-weight:bold;
+	box-shadow:2px 2px 1px black;
+}
+
+.voltar{
+	text-decoration:underline;
+	color:blue;
+	font-weight:400;
+	width:max-content;
+}
+
+.edit{
+	
+	width:40%;
+	padding:2rem;
+	background-color:white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius:0.6em;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	gap:2em;
+}
+
+.edit form{
+	
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	gap:2em;
+	width:100%;
+}
+
+.edit form > div{
+	
+	display:flex;
+	flex-direction: column;
+	width:100%;
+	gap:0.5em	;
+}
+
+.edit form > div input{
+	
+	height:2rem;
+	outline:0;
+	font-size:11pt;
+}
+
+.edit form > div select{
+	
+	height:2rem;
+	font-size:11pt;
+	background-color:white;
+	
+}
+
+.enviar{
+	
+	width:100%;
+	height:2em;
+	border:none;
+	font-weight:bold;
+	background-color:#00BFFF;
+	color:white;
+	cursor:pointer;
+	border:1px solid gray;
+}
+
+form select{
+	
+	width:100%;
+	font-size:11pt;
+	padding-left:0.5rem;
+	background-color:white;
+	border:2px solid black;
+	height:2rem;
+}
+
